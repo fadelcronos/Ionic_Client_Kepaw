@@ -1,0 +1,7 @@
+{
+  "name": "Final_MobProg_Kepaw",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
