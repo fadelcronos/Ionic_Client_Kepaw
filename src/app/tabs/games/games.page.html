@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Games</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let game of loadedGame.slice(0)" color="dark" >
+    <ion-item [routerLink]="['/tabs/tabs/game/game-detail',game.id]" class="ion-activated">
+      <ion-icon name="play-outline" slot="end"></ion-icon>
+      <ion-label>{{ game.title }}</ion-label>
+    </ion-item>
+  </ion-card>
+</ion-content>
+
+

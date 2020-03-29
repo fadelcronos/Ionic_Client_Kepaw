@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tabs/game"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ loadGame?.title }}</ion-title>
+    <ion-buttons slot="primary">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col no-padding>
+        <ion-img [src]="loadGame?.imageUrl"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h1 text-center>{{ loadGame?.title }}</h1>
+        <p>Genre : {{ loadGame?.genre }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h4>Game Description</h4>
+        <p>{{ loadGame?.description }}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
